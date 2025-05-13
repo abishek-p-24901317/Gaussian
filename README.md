@@ -50,10 +50,6 @@ RegisterNumber:
 
 ## Output:
 ![gaussian elimination]()![image](https://github.com/user-attachments/assets/4ece68c9-61ea-4793-bce2-f9b3737000d6)
-
-
-
-
 ## Result:
 Thus the program to find the solution of a matrix using Gaussian Elimination is written and verified using python programming.
 
