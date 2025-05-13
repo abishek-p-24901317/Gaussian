@@ -49,7 +49,8 @@ RegisterNumber:
 ```
 
 ## Output:
-![gaussian elimination]()![image](https://github.com/user-attachments/assets/c9d2d540-a9c8-4449-b028-db7bb7d6fa6f)
+![gaussian elimination]()![image](https://github.com/user-attachments/assets/4ece68c9-61ea-4793-bce2-f9b3737000d6)
+
 
 
 
