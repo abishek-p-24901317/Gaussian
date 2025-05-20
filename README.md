@@ -4,15 +4,30 @@
 To write a program to find the solution of a matrix using Gaussian Elimination.
 
 ## Equipments Required:
-1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. Input the order n and the augmented matrix of size n × (n+1).
-2. Perform forward elimination to convert the matrix into upper triangular form.
-3. Apply back substitution to find the values of the unknown variables.
-4. Print the solution for all variables.
-
+1.Input the number of equations n.
+2.Initialize an augmented matrix a of size n x (n+1) filled with zeros.
+➤ This matrix holds the coefficients and constants.
+3.Initialize a solution array x of size n filled with zeros.
+4.Loop through rows (i = 0 to n-1):
+→ For each row, loop through columns (j = 0 to n):
+→ Input the value and assign to a[i][j].
+➤ This fills the augmented matrix with coefficients and constants.
+5.Begin Gaussian Elimination (Forward Elimination):
+6.If a[i][i] == 0, exit with "Divide by zero detected".
+    For rows below (j = i+1 to n-1):
+    Compute ratio = a[j][i] / a[i][i].
+    Update row: a[j][k] -= ratio * a[i][k] for all k.
+7.Initialize last value of x (solution array):
+x[n-1] = a[n-1][n] / a[n-1][n-1]
+➤ This starts the Back Substitution.
+8.Back Substitution (i = n–1 to 0):
+    Set x[i] = a[i][n]
+    For j = i+1 to n–1: subtract a[i][j] * x[j] from x[i]
+    Final step: x[i] /= a[i][i]
+9.Print the final solutions x[0], x[1], ..., x[n-1] in formatted form.
 ## Program:
 ```'''Program to solve a matrix using Gaussian elimination without partial pivoting.
 Developed by: Abishek P
